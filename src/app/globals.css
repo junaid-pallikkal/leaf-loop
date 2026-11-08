@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F7FAF7;
+  --foreground: #0e2717;
+  
+  --forest: #166534;
+  --forest-dark: #14532d;
+  --forest-deep: #052e16;
+  
+  --leaf: #22C55E;
+  --leaf-light: #86efac;
+  --leaf-soft: #dcfce7;
+  
+  --card-bg: #FFFFFF;
+  --card-border: #E3EBE3;
+  --card-subtle: #F0F6F0;
+  
+  --muted: #4b6354;
+  --muted-light: #64748b;
+  
+  --danger: #ef4444;
+  --warning: #f59e0b;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5cb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a394;
+}
+
+/* Base button styling helpers */
+.btn-primary {
+  background-color: #166534;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #14532d;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #166534;
+  border: 1px solid #E3EBE3;
+  transition: all 0.2s ease;
+}
+.btn-secondary:hover {
+  background-color: #F0F6F0;
+}
+
+/* Clean eco card */
+.eco-card {
+  border: 1px solid #E3EBE3;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(22, 101, 52, 0.04);
+}
+
+.eco-card:not([class*="bg-"]) {
+  background-color: #ffffff;
+}
+
+.eco-card-dark {
+  background-color: #166534 !important;
+  color: #ffffff !important;
+  border: 1px solid #14532d;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px 0 rgba(22, 101, 52, 0.12);
+}
